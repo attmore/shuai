@@ -25,14 +25,14 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Log;
 
-import com.menghuoapp.BuildConfig;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import hu.zhuren.shuai.BuildConfig;
 
 public final class BitmapUtils {
     public static final String TAG = BitmapUtils.class.getSimpleName();

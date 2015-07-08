@@ -31,8 +31,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.menghuoapp.BuildConfig;
-
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -40,6 +38,8 @@ import java.io.InputStream;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.util.regex.Pattern;
+
+import hu.zhuren.shuai.BuildConfig;
 
 /**
  * User: mcxiaoke
