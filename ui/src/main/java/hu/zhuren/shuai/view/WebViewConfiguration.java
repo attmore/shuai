@@ -6,12 +6,14 @@ package hu.zhuren.shuai.view;
  */
 public class WebViewConfiguration {
 
-    private boolean isToolBarEnable = false;
-    private boolean isTopProgressBarEnable = true;
-    private boolean isJavascriptEnable = true;
-    private boolean isLoadingBarEnable = true;
-    private boolean isViewportSupportEnable = true;
-    private boolean isLongClickEnable = false;
+    private boolean isToolBarEnable;
+    private boolean isJavascriptEnable;
+    private boolean isLoadingBarEnable;
+    private boolean isViewportSupportEnable;
+    private boolean isLongClickEnable;
+    private boolean isTopProgressBarEnable;
+    private boolean isImageLazyLoadEnable;
+    private String userAgent;
 
     private WebViewConfiguration(final Builder builder) {
         isToolBarEnable = builder.isToolBarEnable;
@@ -20,6 +22,8 @@ public class WebViewConfiguration {
         isLongClickEnable = builder.isLongClickEnable;
         isLoadingBarEnable = builder.isLoadingBarEnable;
         isViewportSupportEnable = builder.isViewportSupportEnable;
+        isImageLazyLoadEnable = builder.isImageLazyLoadEnable;
+        userAgent = builder.mUserAgent;
     }
 
     public static WebViewConfiguration newConfiguration() {
@@ -50,6 +54,14 @@ public class WebViewConfiguration {
         return isLongClickEnable;
     }
 
+    public boolean isImageLazyLoadEnable() {
+        return isImageLazyLoadEnable;
+    }
+
+    public String getUserAgent() {
+        return userAgent;
+    }
+
     public static class Builder {
         private boolean isToolBarEnable = false;
         private boolean isTopProgressBarEnable = true;
@@ -57,6 +69,7 @@ public class WebViewConfiguration {
         private boolean isLoadingBarEnable = true;
         private boolean isViewportSupportEnable = true;
         private boolean isLongClickEnable = false;
+        private boolean isImageLazyLoadEnable = false;
 
         private String mUserAgent = "hu.zhuren.shuai";  //default string
 
