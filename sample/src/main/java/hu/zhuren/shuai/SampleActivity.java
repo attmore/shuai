@@ -1,9 +1,13 @@
 package hu.zhuren.shuai;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import hu.zhuren.shuai.utils.MemeoryUtils;
+import hu.zhuren.shuai.utils.SystemUtils;
 
 
 public class SampleActivity extends ActionBarActivity {
@@ -12,6 +16,9 @@ public class SampleActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample);
+        SystemUtils.printSystemInfo();
+        Toast.makeText(this, MemeoryUtils.printMemInfo(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, MemeoryUtils.getMemoryInfo(this).availMem+"", Toast.LENGTH_SHORT).show();
     }
 
 
