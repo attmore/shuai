@@ -58,9 +58,7 @@ public class LogUtils {
         info(TAG, msg);
     }
 
-
     public static void writeFileLog(String msg) {
-
+        //TODO 等待StorageUtils完成后修改
     }
-
 }
