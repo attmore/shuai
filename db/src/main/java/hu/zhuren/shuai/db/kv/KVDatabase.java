@@ -103,7 +103,7 @@ public class KVDatabase implements IKVDatabase {
      * 可以持久化到SharedPerference
      */
     public void persist() {
-        
+
         mConfig.getPersistenType();
     }
 }

@@ -6,7 +6,6 @@ package hu.zhuren.shuai.db.kv;
  */
 public class KVDBConfig {
     //持久化的存储的地方
-
     public static final byte PERSISTENT_TYPE_SQLITE = 0x01;
     public static final byte PERSISTENT_TYPE_SHAREPREFERENCE = 0x02;
     public static final byte PERSISTENT_TYPE_SDCARD = 0x03;
@@ -31,12 +30,6 @@ public class KVDBConfig {
         isNeedEncrypt = builder.isNeedEncrypt;
         mEncryptType = builder.encryptType;
         mPersistenType = builder.persistenType;
-    }
-
-    public void testfoin() {
-        Builder build = new Builder();
-        KVDBConfig config = build.setDbName("").setDbVersion("").setEncryptKey("").setNeedEncrypt(false).setNeedPersistent(false).build();
-
     }
 
     /**
