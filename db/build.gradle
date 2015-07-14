@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 21
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "hu.zhuren.shuai.db"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
