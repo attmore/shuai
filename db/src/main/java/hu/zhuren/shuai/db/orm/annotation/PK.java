@@ -6,10 +6,9 @@ import java.lang.annotation.Target;
 
 /**
  * Created by zhuren.hu on 15/7/15.
- * 表 - Table 注解
+ * 主键 PK 的注解
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target({java.lang.annotation.ElementType.TYPE})
-public @interface Table {
-    public abstract String name();
+@Target({java.lang.annotation.ElementType.FIELD})
+public @interface PK {
 }
